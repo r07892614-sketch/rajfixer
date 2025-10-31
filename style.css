@@ -1,0 +1,136 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== CARD ===== */
+.container {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(6px);
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 255, 0.3);
+  width: 100%;
+  max-width: 420px;
+  animation: slideUp 1.4s ease-out;
+}
+
+/* ===== TEXT STYLES ===== */
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff55;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #dcdcdc;
+  opacity: 0.9;
+}
+
+.subs {
+  margin-top: 6px;
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.promo {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.paid {
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+.username {
+  display: block;
+  margin-top: 5px;
+  color: #90ff8a;
+  font-weight: 600;
+}
+
+/* ===== TIMER ===== */
+.timer-box {
+  margin: 22px 0;
+}
+
+.wait-text {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+#countdown {
+  font-size: 3rem;
+  color: #ffd700;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.seconds {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* ===== JOIN BUTTON ===== */
+.join-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff0077, #ffae00);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 34px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  animation: fadePulse 1.5s infinite alternate;
+  transition: transform 0.3s ease;
+}
+
+.join-btn:hover {
+  transform: scale(1.08);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadePulse {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+  .title { font-size: 1.7rem; }
+  #countdown { font-size: 2.5rem; }
+}
