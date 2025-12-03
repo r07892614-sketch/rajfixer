@@ -19,42 +19,343 @@ src="https://www.facebook.com/tr?id=798961696280689&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>𝐑𝐀𝐉 𝐅𝐈𝐗𝐄𝐑 | Cricket Analyst</title>
-  <link rel="stylesheet" href="style.css" />
+    <title>[ 𝐀𝐍𝐍𝐀 𝐅𝐈𝐗𝐄𝐑™ ] 𝐎𝐑𝐈𝐆𝐈𝐍𝐀𝐋</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), 
+                        url('bg.avif') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .logo-container {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .logo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff8c00;
+            margin: 0 auto;
+            box-shadow: 0 0 30px rgba(255, 140, 0, 0.7);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 20px rgba(255, 140, 0, 0.7);
+            }
+            to {
+                box-shadow: 0 0 40px rgba(255, 140, 0, 0.9), 0 0 70px rgba(255, 140, 0, 0.6);
+            }
+        }
+
+        .brand-name {
+            font-size: 3rem;
+            margin-top: 15px;
+            color: #ff8c00;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+            letter-spacing: 1px;
+        }
+
+        .tm {
+            font-size: 1.5rem;
+            vertical-align: super;
+        }
+
+        .subscribers {
+            font-size: 1.3rem;
+            margin: 10px 0 25px;
+            color: #f8f8f8;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .award {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #ff8c00;
+            font-weight: bold;
+        }
+
+        .description {
+            /* background: rgba(0, 0, 0, 0.6); */
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            /* border-left: 4px solid #ff8c00; */
+        }
+
+        .highlight {
+            color: #ff8c00;
+            font-weight: bold;
+        }
+
+        .timer-container {
+            margin: 30px 0;
+            padding: 20px;
+            /* background: rgba(0, 0, 0, 0.7); */
+            border-radius: 15px;
+            /* border: 2px solid #ff8c00; */
+        }
+
+        .timer-text {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #f8f8f8;
+        }
+
+        .timer {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff8c00;
+            font-family: 'Courier New', monospace;
+            text-shadow: 0 0 15px rgba(255, 140, 0, 0.8);
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s forwards;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-width: 250px;
+        }
+
+        .btn-owner {
+            background: linear-gradient(45deg, #ff8c00, #ff5500);
+            color: white;
+            box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+        }
+
+        .btn-channel {
+            background: linear-gradient(45deg, #1e90ff, #0077e6);
+            color: white;
+            box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4);
+        }
+
+        .btn-betting {
+            background: linear-gradient(45deg, #32cd32, #228b22);
+            color: white;
+            box-shadow: 0 5px 15px rgba(50, 205, 50, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #aaa;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .brand-name {
+                font-size: 2.2rem;
+            }
+            
+            .logo {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .timer {
+                font-size: 2.5rem;
+            }
+            
+            .btn {
+                font-size: 1.1rem;
+                padding: 12px 25px;
+                min-width: 220px;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .brand-name {
+                font-size: 1.8rem;
+            }
+            
+            .logo {
+                width: 130px;
+                height: 130px;
+            }
+            
+            .subscribers {
+                font-size: 1.1rem;
+            }
+            
+            .award {
+                font-size: 1.3rem;
+            }
+            
+            .timer {
+                font-size: 2rem;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="VULTURE THE BRAND Logo" class="logo">
+            <h1 class="brand-name">RAJ FIXER [CRICKET ANALYST]</h1>
+        </div>
+        
+        <div class="subscribers"><i class="fas fa-users"></i>108 889 subscribers</div>
+        
+        <!-- <div class="award"><i class="fas fa-trophy"></i> Vulture - (The Best Cricket Tipper Awarded)</div> -->
+        
+        <div class="buttons">
+            <a href="https://t.me/+VtScpssku7A3YTI1" class="btn btn-channel" style="animation-delay: 0.6s">
+                <i class="fas fa-door-open"></i> Join [RAJ FIXER [CRICKET ANALYST]] Channel
+            </a>
+        </div>
 
-  <div class="container fade-in">
-    <h1 class="title">𝐑𝐀𝐉 𝐅𝐈𝐗𝐄𝐑</h1>
-    <p class="subtitle">[𝙲𝚛𝚒𝚌𝚔𝚎𝚝 𝙰𝚗𝚊𝚕𝚢𝚜𝚝]</p>
-    <p class="subs">80 361 Subscribers ✅</p>
+        <div class="timer-container">
+            <div class="timer-text">Limited Time Offer Ends In:</div>
+            <div class="timer" id="timer">01:00</div>
+        </div>
 
-    <div class="promo">
-      <p class="paid">𝙿𝚊𝚒𝚍 𝙿𝚛𝚘𝚖𝚘𝚝𝚒𝚘𝚗</p>
-      <span class="username">@Rajbhai7777</span>
+        <div class="description">
+            <p><span class="highlight">Poora Telegram Apna Tips Copy Karte...</span> Apke Bhai Ka Source Direct India Ke Bahar Se Hai</p>
+            <!-- <p><span class="highlight">Bookie Ka Systum Hila dega Aapka Vulture ...</span></p> -->
+        </div>
+
     </div>
 
-    <a href="https://t.me/+VtScpssku7A3YTI1" id="joinBtn" class="join-btn">Join [𝐑𝐀𝐉 𝐅𝐈𝐗𝐄𝐑 | Cricket Analyst] Channel</a>
+    <script>
+        // 60-second timer
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
 
-    <div class="timer-box">
-      <p class="wait-text">Opening Channel In</p>
-      <h2 id="countdown">60</h2>
-      <p class="seconds">seconds</p>
-    </div>
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
 
-<div style="text-align:center; margin-top:15px;">
-  <p style="margin:0; font-size:16px; font-weight:600; color:#333;">
-    <a href="https://t.me/AdexpertAlok" style="color:white; text-decoration:none;">
-      Advertise By: <span style="color:red">@AdexpertAlok</span>
-    </a>
-  </p>
-</div>
-    
-  </div>
+                display.textContent = minutes + ":" + seconds;
 
-  <script src="script.js"></script>
+                // Add pulse animation when timer reaches last 10 seconds
+                if (timer <= 10) {
+                    display.style.animation = 'pulse 1s infinite';
+                    display.style.color = '#ff3333';
+                }
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    display.textContent = "00:00";
+                    display.style.animation = '';
+                    // You can add code here to execute when timer reaches 0
+                }
+            }, 1000);
+        }
+
+        // Button hover and click effects
+        function setupButtons() {
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                // Hover effect
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 15px 25px rgba(0, 0, 0, 0.4)';
+                });
+                
+                // Mouse leave effect
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.4)';
+                });
+            });
+        }
+
+        // Initialize everything when page loads
+        window.onload = function () {
+            const sixtySeconds = 60,
+                display = document.querySelector('#timer');
+            startTimer(sixtySeconds, display);
+            setupButtons();
+            
+            // Animate buttons in sequence
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach((btn, index) => {
+                btn.style.animationDelay = `${index * 0.2 + 0.2}s`;
+            });
+        };
+    </script>
 </body>
 </html>
+
 
 
 
